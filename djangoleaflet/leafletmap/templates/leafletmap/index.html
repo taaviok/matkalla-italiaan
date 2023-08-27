@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+{% load leaflet_tags %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1.0">
+
+    <title>Leaflet</title>
+
+    {% leaflet_js %}
+    {% leaflet_css %}
+
+    <style>
+
+        .leaflet-container { /* all maps */
+            width: 600px;
+            height: 400px;
+        }
+
+        #specialbigmap {
+            height: 800px;
+        }
+
+        /* Resize the "display_raw" textbox */
+        .django-leaflet-raw-textarea {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    {% load static %}
+
+    <div id="leaflet" />
+
+    <script src="{% static 'leafletmap/leafletscript.js' %}"></script>
+
+    {% leaflet_map "yourmap" callback="window.map_init_basic" %}
+</body>
+
+</html>
