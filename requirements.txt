@@ -17,6 +17,7 @@ django-leaflet==0.29.0
 Fiona==1.9.4.post1
 fonttools==4.39.4
 GDAL==3.0.4
+geodatasets==2023.3.0
 geopandas==0.13.0
 geoviews==1.10.0
 holoviews==1.16.2
@@ -39,6 +40,8 @@ panel==1.1.0
 param==1.13.0
 Pillow==9.5.0
 pkg_resources==0.0.0
+platformdirs==3.10.0
+pooch==1.7.0
 pyct==0.5.0
 pyparsing==3.0.9
 pyproj==3.5.0
