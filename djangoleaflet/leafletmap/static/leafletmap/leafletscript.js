@@ -17,7 +17,7 @@ function markCity() {
     .then(data => {
       
       let coordinates = data.features[0].geometry.coordinates;
-      coordiantes = coordinates.reverse();
+      coordinates.reverse();
       marker1.removeFrom(lmap)
       marker1 = L.marker(coordinates);
       marker1.addTo(lmap);
@@ -30,7 +30,7 @@ function markCity() {
     .then(data => {
 
       let coordinates = data.features[0].geometry.coordinates;
-      coordiantes1 = coordinates.reverse();
+      coordinates.reverse();
       marker2.removeFrom(lmap)
       marker2 = L.marker(coordinates);
       marker2.addTo(lmap);
