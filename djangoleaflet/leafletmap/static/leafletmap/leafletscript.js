@@ -7,8 +7,8 @@ function map_init_basic(map, options) {
 }
 
 function markCity() {
-  var city1 = document.getElementById('icity1').value;
-  var city2 = document.getElementById('icity2').value;
+  const city1 = document.getElementById('icity1').value;
+  const city2 = document.getElementById('icity2').value;
 
   const city1URL = 'https://nominatim.openstreetmap.org/search?q=' + city1 + '&format=geojson';
 
