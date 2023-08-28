@@ -10,6 +10,10 @@ Step 1:
 
 Clone the project. Python and pip are required. Also virtual environment is recommended. You can create and activate one using commands
 
+<img
+    src='./map_interface.png'
+    style='max-width: 300px'>
+
 ```
 python3 -m venv .venv
 source .venv/bin/activate
@@ -23,6 +27,6 @@ pip install -r requirements.txt
 
 Step 3: Run
 
-'''
+```
 python manage.py runserver
-'''
+```
