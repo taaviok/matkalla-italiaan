@@ -25,7 +25,7 @@ Step 2: Install necessary python packages
 pip install -r requirements.txt
 ```
 
-Step 3: Run
+Step 3: Run inside folder __djangoleaflet__
 
 ```
 python manage.py runserver
