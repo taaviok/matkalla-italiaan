@@ -37,9 +37,16 @@
 
     <div id="leaflet" />
 
-    <script src="{% static 'leafletmap/leafletscript.js' %}"></script>
+    {% leaflet_map "lmap" callback="window.map_init_basic" %}
 
-    {% leaflet_map "yourmap" callback="window.map_init_basic" %}
+    <label for="icity1">1st City:</label>
+    <input type="text" id="icity1" name="icity1" />
+
+    <label for="icity2">2nd City:</label>
+    <input type="text" id="icity2" name="icity2" />
+    <button type="button" onclick="markCity()" id="bcity" name="bcity">Mark</button>
+
+    <script src="{% static 'leafletmap/leafletscript.js' %}"></script>
 </body>
 
 </html>
