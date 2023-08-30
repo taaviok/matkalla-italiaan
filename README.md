@@ -30,3 +30,25 @@ Step 3: Run inside folder __djangoleaflet__
 ```
 python manage.py runserver
 ```
+
+## Troubleshooting
+
+In case there is trouble with installing or running the packages concerning GDAL. Try these to fix the issue:
+
+Step 1: Install development files for GDAL
+
+```
+sudo apt-get install libgdal-dev
+```
+
+Step 2: Check the version of libgdal-dev and be sure to install GDAL with same version
+
+```
+pip install gdal==”VERSION”
+```
+
+Step 3: GDAL uses use_2to3, so you need either disable it or install older setuptools version (58.0.0 or older) that still support it
+
+```
+pip install setuptools==58.0.0
+```
